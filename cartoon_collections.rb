@@ -6,13 +6,9 @@ end
 
 def summon_captain_planet(calls)
   arr = []
-  calls.each do |word|
-    word = word.split("")
-    word[0].upcase
-    word.join("")
-    arr << word
-  end
-  arr
+  calls = calls.map {|el| el.capitalize}
+  calls.each {|el| el << "!"}
+  calls
 end
 
 def long_planeteer_calls# code an argument here
