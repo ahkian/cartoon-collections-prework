@@ -4,8 +4,15 @@ def roll_call_dwarves(arr)
   end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls)
+  arr = []
+  calls.each do |word|
+    word = word.split("")
+    word[0].upcase
+    word.join("")
+    arr << word
+  end
+  arr
 end
 
 def long_planeteer_calls# code an argument here
